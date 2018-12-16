@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#PBS -q wsuq
+#PBS -l ncpus=1
+#PBS -l mem=200GB
+#PBS -o /wsu/home/fw/fw38/fw3860/output_file
+#PBS -e /wsu/home/fw/fw38/fw3860/error_file 
+
+cd $TMPDIR
+cp /wsu/home/fw/fw38/fw3860/quicksort/a.out $TMPDIR
+
+$TMPDIR/a.out
