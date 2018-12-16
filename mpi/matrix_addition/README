@@ -1,0 +1,18 @@
+#John Shamoon - fw3860
+#Homework 5
+
+## Description
+MPI program calculate the summation of two 128x128 matrices.
+There are 8 nodes that will each calculate the summations of 16 rows.
+
+The master node will then gather the results and put them in a file called john_shamoon_matrix_output.txt.
+
+## To run the program:
+1. Connect to the grid.
+2. qsub -I
+3. make
+4. exit
+5. qsub -q wsuq jobscript
+6. wait for output to be places in jobscript.o*, jobscript.e*, and john_shamoon_matrix_output.txt files.
+
+# To remove the jobscript.e*, jobscript.o*, and matrix output files, run "make clean"

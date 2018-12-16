@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#PBS -l nodes=2:ppn=4
+#PBS -l mem=50GB
+#PBS -m ea
+
+module load openmpi-1.8.8
+mpirun --mca btl ^openib --hostfile $PBS_NODEFILE ./shell_sort
